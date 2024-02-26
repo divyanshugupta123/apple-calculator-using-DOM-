@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+
+}
+
+#container{
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+input{
+    background-color: black;
+    border: 0;
+    outline: none;
+    color: white;
+    font-size: 45px;
+    padding: 0px 32px;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.button-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-grow: 2;
+}
+
+button{
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    place-self: center;
+    border: 0;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(46, 45, 45);
+}
+
+button:active{
+    transform: scale(0.85);
+
+}
+
+
+.greybutton{
+    background-color: rgb(148, 141, 141);
+    color: black;
+}
+.yellowbutton{
+    background-color: rgb(221, 127, 20);
+}
+
+.zero{
+    grid-column: span 2;
+    border-radius: 75px;
+    text-align: left;
+}
